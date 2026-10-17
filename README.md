@@ -7,7 +7,7 @@
 
 `Rust` · `ufw` · `nftables`-adjacent · `docker`
 
-**[cybercoretech.github.io/sentrygrid](https://cybercoretech.github.io/sentrygrid/)**
+**Project repository:** [cybercoretech/sentrygrid](https://github.com/cybercoretech/sentrygrid)
 
 **Network exposure auditor.** Answers the one question `ss`, `ufw status`,
 and `docker ps` each only partially answer on their own: **is this port
