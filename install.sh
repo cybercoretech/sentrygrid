@@ -7,7 +7,7 @@
 # `ss` and `ufw`, both Linux-specific, so there's no macOS build.
 set -eu
 
-REPO="cybercore-tech/sentrygrid"
+REPO="cybercoretech/sentrygrid"
 INSTALL_DIR="${SENTRYGRID_INSTALL_DIR:-$HOME/.local/bin}"
 
 die() {
