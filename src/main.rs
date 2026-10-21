@@ -10,7 +10,7 @@ use std::process::ExitCode;
 #[derive(Parser, Debug)]
 #[command(
     name = "sentrygrid",
-    version = "0.1.0",
+    version,
     about = "Network exposure auditor — is this port actually reachable?"
 )]
 struct Args {
