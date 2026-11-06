@@ -162,6 +162,52 @@
     .install-panel-head { flex-direction: column; align-items: flex-start; }
   }
 </style>
+  <link rel="stylesheet" href="https://cybercoretech.github.io/kit/chooser.css">
+  <style>
+    cybercore-theme-chooser{--ccx-bg:#111418;--ccx-fg:var(--white);--ccx-line:var(--line);--ccx-accent:var(--signal);--ccx-focus:var(--signal);--ccx-field:var(--void);--ccx-muted:var(--muted);--ccx-button-bg:transparent;--ccx-button-border:var(--line);--ccx-radius:6px;--ccx-button-width:auto;--ccx-height:2.25rem;--ccx-glow:.5;}
+  </style>  <style id="cc-mobile-first">
+/* Mobile floor (phones + tablets): readable text and finger-sized targets.
+   Generated per range from what renders under 11px / 24px; desktop untouched. */
+@media (max-width: 600px) {
+  span.sev-pill,
+  div.foot-family { font-size: 11px !important; }
+}
+@media (min-width: 601px) and (max-width: 860px) {
+  span.sev-pill,
+  div.foot-family { font-size: 11px !important; }
+}
+@media (min-width: 861px) and (max-width: 1024px) {
+  span.sev-pill,
+  div.foot-family { font-size: 11px !important; }
+}
+@media (pointer: coarse) {
+  a.brand,
+  a.gh { min-height: 24px; min-width: 24px; }
+  footer > div.wrap > div > a { display: inline-flex; align-items: center; min-height: 24px; min-width: 24px; }
+}
+/* Layout fixes: phones and tablets only; laptops and desktops untouched. */
+@media (max-width: 1024px) {
+  /* Mobile first: nothing may make the page wider than the screen.
+     Grid/flex columns may shrink below their widest line; code scrolls in place. */
+  pre { max-width: 100%; overflow-x: auto; }
+  img, video { max-width: 100%; height: auto; }
+  /* Long paths and URLs in inline code may break anywhere instead of widening the page. */
+  :not(pre) > code { overflow-wrap: anywhere; }
+}
+  </style>
+
+
+
+
+
+
+
+
+
+
+  <script>window.SITE = Object.assign(window.SITE || {}, {"siteLabel": "SentryGrid", "themeVars": {"bg": "--void", "red": "--alert", "cyan": "--signal", "orange": "--blocked", "panel": null}});</script>
+  <script type="module" src="https://cybercoretech.github.io/kit/chooser.js"></script>
+
 
 <div class="topbar">
   <div class="wrap">
@@ -172,7 +218,7 @@
     <div class="topbar-actions">
       <a class="gh" href="https://github.com/cybercoretech/sentrygrid" target="_blank" rel="noopener">GitHub</a>
       <a class="btn-install" href="#install">Install</a>
-    </div>
+    <cybercore-theme-chooser compact match=".topbar-actions .gh"></cybercore-theme-chooser></div>
   </div>
 </div>
 
